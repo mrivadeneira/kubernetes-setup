@@ -7,5 +7,7 @@ echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.clou
 curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo tee /usr/share/keyrings/cloud.google.gpg
 
 #install
-sudo apt-get update && sudo apt-get install google-cloud-cli;
+sudo apt-get update;
+sudo apt-get install google-cloud-cli;
+sudo apt-get install google-cloud-sdk-gke-gcloud-auth-plugin;
 sudo apt-get install kubectl;
